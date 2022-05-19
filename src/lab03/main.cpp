@@ -3,27 +3,25 @@
 
 using namespace std;
 
-// 參考 main() 函數補上所需的程式
-void dump(int dat[], int len, int s = 0, int e = -1, bool r = false)
+void dump(int d[], int len)
 {
-    e = (e == -1 || e > len) ? len : e;
-    s = (s < 0) ? 0 : s;
-    if (r)
+    for (int i = 0; i < len; i++)
     {
-        for (int i = e - 1; i >= s; i--)
-        {
-            cout << setw(5) << dat[i];
-        }
-    }
-    else
-    {
-        for (int i = s; i < e; i++)
-        {
-            cout << setw(5) << dat[i];
-        }
+        cout << setw(4) << d[i];
+        if ((i + 1) % 20 == 0)
+            cout << endl;
     }
     cout << endl;
 }
+
+// ==============================================
+// -----^^----- 不得修改『以上』的程式 -----^^-----
+// ==============================================
+
+// 務必先閱讀公告上網課堂練習，所有解題線索皆在其中
+// 參考 main() 函數補上所需的程式
+#define M_dump(a) dump(a, sizeof(a) / sizeof(int))
+
 
 // ==============================================
 // -----vv----- 不得修改『以下』的程式 -----vv-----
@@ -31,20 +29,20 @@ void dump(int dat[], int len, int s = 0, int e = -1, bool r = false)
 
 int main()
 {
-    int arr[100];
-    int i = 0;
-    int s, e;
-    bool r;
+    int a1[] = {3, 4, 5, 3, 2, 4, 5, 6, 7, 8, 9};
+    int a2[] = {5, 5, 5, 5, 5, 5, 5};
+    int a3[] = {1, 2, 3, 4, 5, 6};
 
-    cin >> s;
-    cin >> e;
-    cin >> r;
+    int whichone;
 
-    while (cin >> arr[i++])
-        ;
-    i--;
+    cin >> whichone;
 
-    dump(arr, i, s, e, r);
+    switch(whichone) {
+        case 1 : M_dump(a1); break;
+        case 2 : M_dump(a2); break;
+        case 3 : M_dump(a3); break;
+        default: break;// do nothing
+    }
 
     return 0;
 }

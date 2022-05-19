@@ -3,51 +3,59 @@
 
 using namespace std;
 
-// 參考 fill_zero() 及 main() 函數補上所需的程式
-
-void fill_seq(int dat[], int len, int sval, int step)
+void dump(int d[], int len)
 {
     for (int i = 0; i < len; i++)
     {
-        dat[i] = sval;
-        sval+=step;
+        cout << setw(4) << d[i];
+        if ((i + 1) % 20 == 0)
+            cout << endl;
     }
+    cout << endl;
+}
+
+// ==============================================
+// -----^^----- 不得修改『以上』的程式 -----^^-----
+// ==============================================
+
+// 務必先閱讀公告上網課堂練習，所有解題線索皆在其中
+// 參考 main() 函數補上所需的程式
+int dice()
+{
+    return rand() % 6 + 1;
+}
+
+void roll_dice(int rn[], int len)
+{
+    for (int i = 0; i < len; i++)
+        rn[i] = dice();
+}
+
+void analysis(int rn[], int len, int cnt[])
+{
+    for (int i = 0; i < 7; i++)
+        cnt[i] = 0;
+    cnt[0] = len;
+    for (int i = 0; i < len; i++)
+        cnt[rn[i]]++;
 }
 
 // ==============================================
 // -----vv----- 不得修改『以下』的程式 -----vv-----
 // ==============================================
 
-void dump(int dat[], int len)
-{
-    for (int i = 0; i < len; i++)
-    {
-        cout << setw(5) << dat[i];
-    }
-    cout << endl;
-}
-
-void fill_zero(int dat[], int len)
-{
-    fill_seq(dat,len,0,0);
-}
-
-const int MAX_LEN = 30;
-
 int main()
 {
-    int arr[MAX_LEN];
-    int len;
-    int start, step;
+    const int LEN = 100;
+    int rd[LEN];
+    int cd[7];
 
-    cin >> len;
-    cin >> start;
-    cin >> step;
+    int len = 0;
+    while(cin>>rd[len++]);
+    len--;
 
-    fill_zero(arr, len);
-    dump(arr, len);
-    fill_seq(arr, len, start, step);
-    dump(arr, len);
+    analysis(rd, len, cd);
+    dump(cd, 7);
 
     return 0;
 }

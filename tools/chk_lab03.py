@@ -6,22 +6,17 @@ __author__ = "Jung-Lin Yang"
 __copyright__ = "Copyright (C) 2022, STUST EECS"
 __version__ = "0.1"
 
+a = list(range(4))
+a[1] = [3, 4, 5, 3, 2, 4, 5, 6, 7, 8, 9]
+a[2] = [5, 5, 5, 5, 5, 5, 5]
+a[3] = [1, 2, 3, 4, 5, 6]
 
 def expected():
-    dat = [randint(1, 100) for _ in range(randint(10, 20))]
-    l = len(dat)
-    s = randint(-5, 3)
-    e = randint(l-5, l+10)
-    r = randint(0, 1)
-    idat = f"{s} {e} {r} {' '.join(str(_) for _ in dat)}"
-    if e == -1:
-        e = l
-    if s < 0:
-        s = 0
-    dat = dat[s:e]
-    if r==1:
-        dat.reverse()
-    odat = ' '.join(str(_) for _ in dat)
+    dat = randint(0,4)
+    idat = f"{dat} "
+    odat = ""
+    if dat in [1,2,3]:
+        odat = " ".join(str(_) for _ in a[dat])
     print(f"Test Data : {idat}")
     return idat, odat
 

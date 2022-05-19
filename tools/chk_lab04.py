@@ -6,16 +6,12 @@ __author__ = "Jung-Lin Yang"
 __copyright__ = "Copyright (C) 2022, STUST EECS"
 __version__ = "0.1"
 
-
 def expected():
-    l = randint(5,15)
-    start = randint(-10,10)
-    step = randint(-2,2)
-    idat = f"{l} {start} {step}"
-    odat = "0 "*l+"\n"
-    for _ in range(l):
-        odat+=f" {start}"
-        start+=step
+    dat = [randint(1,6) for _ in range(randint(30,100))]
+    idat = " ".join([str(_) for _ in dat])
+    odat = f"{len(dat)} "
+    for i in range(1,7):
+        odat+=f"{dat.count(i)} "
     print(f"Test Data : {idat}")
     return idat, odat
 
