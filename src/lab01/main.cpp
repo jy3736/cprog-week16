@@ -3,16 +3,34 @@
 
 using namespace std;
 
-// 參考 main() 函數補上所需的程式
-void dump(int dat[], int len, int s = 0, int e = -1)
-{
-    e = (e == -1) ? len : e;
-    for (int i = s; i < e; i++)
-    {
-        cout << setw(5) << dat[i];
+void dump(int d[], int len) {
+    for(int i=0; i<len; i++) {
+        cout<<setw(4)<<d[i];
+        if ((i+1)%20==0)
+            cout<<endl;
     }
-    cout << endl;
+    cout<<endl;
 }
+
+// ==============================================
+// -----vv----- 不得修改『以上』的程式 -----vv-----
+// ==============================================
+
+
+// 參考 main() 函數補上所需的程式
+void fill(int d[], int len, int val) {
+    for(int i=0; i<len; i++)
+        d[i] = val;    
+}
+
+void zero(int d[], int len) {
+    fill(d,len,0);
+}
+
+void seven(int d[], int len) {
+    fill(d,len,7);
+}
+
 
 // ==============================================
 // -----vv----- 不得修改『以下』的程式 -----vv-----
@@ -20,18 +38,16 @@ void dump(int dat[], int len, int s = 0, int e = -1)
 
 int main()
 {
-    int arr[100];
-    int i = 0;
-    int s, e;
+    int a1[10];
+    int v;
+    cin >> v;
 
-    cin >> s;
-    cin >> e;
-
-    while (cin >> arr[i++])
-        ;
-    i--;
-
-    dump(arr, i, s, e);
+    zero(a1,10);
+    dump(a1,10);
+    fill(a1,10,v);
+    dump(a1,10);
+    seven(a1,10);
+    dump(a1,10);
 
     return 0;
 }

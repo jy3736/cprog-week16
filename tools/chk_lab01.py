@@ -8,14 +8,9 @@ __version__ = "0.1"
 
 
 def expected():
-    dat = [randint(1, 100) for _ in range(randint(10, 20))]
-    l = len(dat)
-    s = randint(0, l)
-    e = randint(-1, l)
-    idat = f"{s} {e} {' '.join(str(_) for _ in dat)}"
-    if e == -1:
-        e = l
-    odat = ' '.join(str(_) for _ in dat[s:e])
+    dat = randint(1, 100)
+    idat = f"{dat} "
+    odat = f"{'0 '*10}\n{idat*10}\n{'7 '*10}"
     print(f"Test Data : {idat}")
     return idat, odat
 
