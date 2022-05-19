@@ -1,11 +1,21 @@
 ## 課堂練習 01 - 一維陣列簡單操作運用
 
+
+```c++
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+```
+
 ### 定義一維陣列
+
+
 ```c++
 int a1[6] = {1, 4, 2, 5, 6, 7};
 ```
 
-### 使用 `陣列名稱[索引]` 的方式存取陣列中的元素
+
 ```c++
 cout<<"a1[0] = "<<a1[0]<<endl;
 cout<<"a1[1] = "<<a1[1]<<endl;
@@ -41,6 +51,8 @@ cout<<"a1[2] = "<<a1[2]<<endl;
 ### 設計陣列輸出函數
 - d   ：陣列
 - len ：陣列 d 的長度(幾個元素)
+
+
 ```c++
 void dump(int d[], int len) {
     for(int i=0; i<len; i++) {
@@ -72,6 +84,8 @@ dump(a1,3);
 - d   ：陣列
 - len ：陣列 d 的長度(幾個元素)
 - val ：填入陣列的數值
+
+
 ```c++
 void fill(int d[], int len, int val) {
     for(int i=0; i<len; i++)
@@ -101,6 +115,8 @@ dump(a2,10);
 ### 設計將陣列所有元素初始為 0 的函數
 - d   ：陣列
 - len ：陣列 d 的長度(幾個元素)
+
+
 ```c++
 void zero(int d[], int len) {
     fill(d,len,0);
@@ -120,6 +136,8 @@ dump(a3,15);
 ### 設計將陣列所有元素初始為 7 的函數
 - d   ：陣列
 - len ：陣列 d 的長度(幾個元素)
+
+
 ```c++
 void seven(int d[], int len) {
     fill(d,len,7);
@@ -134,6 +152,4 @@ dump(a4,10);
 ```
 
        7   7   7   7   7   7   7   7   7   7
-
-
 
