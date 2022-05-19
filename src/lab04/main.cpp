@@ -20,25 +20,6 @@ void dump(int d[], int len)
 
 // 務必先閱讀公告上網課堂練習，所有解題線索皆在其中
 // 參考 main() 函數補上所需的程式
-int dice()
-{
-    return rand() % 6 + 1;
-}
-
-void roll_dice(int rn[], int len)
-{
-    for (int i = 0; i < len; i++)
-        rn[i] = dice();
-}
-
-void analysis(int rn[], int len, int cnt[])
-{
-    for (int i = 0; i < 7; i++)
-        cnt[i] = 0;
-    cnt[0] = len;
-    for (int i = 0; i < len; i++)
-        cnt[rn[i]]++;
-}
 
 // ==============================================
 // -----vv----- 不得修改『以下』的程式 -----vv-----

@@ -20,7 +20,6 @@ void dump(int d[], int len)
 
 // 務必先閱讀公告上網課堂練習，所有解題線索皆在其中
 // 參考 main() 函數補上所需的程式
-#define M_dump(a) dump(a, sizeof(a) / sizeof(int))
 
 
 // ==============================================

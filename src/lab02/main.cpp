@@ -21,29 +21,7 @@ void dump(int d[], int len)
 
 // 務必先閱讀公告上網課堂練習，所有解題線索皆在其中
 // 參考 main() 函數補上所需的程式
-void seq(int d[], int len, int start, int step)
-{
-    for (int i = 0; i < len; i++)
-    {
-        d[i] = start;
-        start += step;
-    }
-}
 
-void fill(int d[], int len, int val)
-{
-    seq(d, len, val, 0);
-}
-
-void zero(int d[], int len)
-{
-    seq(d, len, 0, 0);
-}
-
-void seven(int d[], int len)
-{
-    fill(d, len, 7);
-}
 
 // ==============================================
 // -----vv----- 不得修改『以下』的程式 -----vv-----

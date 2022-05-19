@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sun May 15 15:58:02 2022
+# Make data base, printed on Thu May 19 20:38:11 2022
 
 # Variables
 
@@ -20,29 +20,30 @@ USERPROFILE = C:\Users\jyang
 # environment
 LOCALAPPDATA = C:\Users\jyang\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3e25db1c-490c-44e5-9af0-c55476b92b59-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-0157aca8-400a-4a73-8e4f-d79b20f48b2b-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
-VSCODE_CWD = C:\Workspace\github_classroom\cprog-week15-sol
+VSCODE_CWD = D:\Workspace\github_classroom\cprog-week16
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
-# environment
-SYSTEMROOT = C:\WINDOWS
+# env 
+ironment
+SYSTEMROOT = C:\Windows
 # makefile (from 'Makefile', line 3)
 dir_check = tools
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-PSMODULEPATH = C:\Users\jyang\OneDrive - �n�O��ޤj��\���\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PSMODULEPATH = C:\CloudDrive\OneDrive - �n�O��ޤj��\���\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_3228_OBTTZUMFKZLIULUV
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18060_CMKMNMWVIXDCYRNR
 # environment
-ONEDRIVECOMMERCIAL = C:\Users\jyang\OneDrive - �n�O��ޤj��
+ONEDRIVECOMMERCIAL = C:\CloudDrive\OneDrive - �n�O��ޤj��
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -56,7 +57,7 @@ VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\jyang\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+VSCODE_CODE_CACHE_PATH = C:\Users\jyang\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
 # environment
 LANG = C
 # default
@@ -70,11 +71,9 @@ PROCESSOR_ARCHITEW6432 = AMD64
 # makefile
 MAKEFLAGS = pqrR
 # environment
-ONEDRIVE = C:\Users\jyang\OneDrive - �n�O��ޤj��
-# environment
-POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro Education
+ONEDRIVE = C:\CloudDrive\OneDrive - �n�O��ޤj��
 # makefile
-CURDIR := c:/Workspace/github_classroom/cprog-week15-sol
+CURDIR := d:/Workspace/github_classroom/cprog-week16
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -98,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3228
+VSCODE_PID = 18060
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -108,7 +107,7 @@ WT_PROFILE_ID = {61c54bbd-c2c6-5271-96e7-009a87ff44bf}
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := Windows32
 # environment
@@ -122,9 +121,11 @@ MAKECMDGOALS := all
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
 # environment
-COMSPEC = C:\WINDOWS\system32\cmd.exe
+COMSPEC = C:\Windows\system32\cmd.exe
 # environment
-WINDIR = C:\WINDOWS
+WEBSTORM = C:\Program Files\JetBrains\WebStorm 2021.3.1\bin;
+# environment
+WINDIR = C:\Windows
 # environment
 MAKELEVEL := 0
 # makefile (from 'Makefile', line 1)
@@ -132,11 +133,9 @@ compile = g++
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\TDM-GCC-64\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;C:\Users\jyang\AppData\Local\Microsoft\WindowsApps;C:\Users\jyang\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\flutter\bin;C:\Users\jyang\AppData\Local\GitHubDesktop\bin;C:\Users\jyang\AppData\Roaming\npm
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\tools\flutter\bin;C:\Program Files\PuTTY\;C:\TDM-GCC-64\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\jyang\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\jyang\AppData\Local\Programs\Python\Python310\;C:\Users\jyang\AppData\Local\Microsoft\WindowsApps;C:\Users\jyang\AppData\Roaming\npm;C:\Program Files\JetBrains\WebStorm 2021.3.1\bin;C:\tools\dart-sdk\bin;C:\Users\jyang\AppData\Roaming\Pub\Cache\bin;C:\Users\jyang\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jyang\AppData\Local\GitHubDesktop\bin
 # environment
-ZES_ENABLE_SYSMAN = 1
-# environment
-COMPUTERNAME = YOUNG-2021NB
+COMPUTERNAME = YOUNG-HOME
 # default
 MAKEFILES := 
 # automatic
@@ -144,11 +143,11 @@ MAKEFILES :=
 # environment
 PROMPT = $P$G
 # environment
-CHOCOLATEYLASTPATHUPDATE = 132945388604041704
+CHOCOLATEYLASTPATHUPDATE = 132966429574711085
 # environment
-WT_SESSION = 9908fe87-9da9-45fb-ba14-d3b365404108
+WT_SESSION = 3690d1bd-5640-4a02-ba15-351355dfd293
 # environment
-LOGONSERVER = \\YOUNG-2021NB
+LOGONSERVER = \\YOUNG-HOME
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -160,13 +159,14 @@ COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+PATHEXT = .COM;.EXE;.BAT;.CM 
+D;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
 # automatic
 +F = $(notdir $+)
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERDOMAIN = Young-2021NB
+USERDOMAIN = Young-Home
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -180,9 +180,9 @@ MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE = Young-2021NB
+USERDOMAIN_ROAMINGPROFILE = Young-Home
 # environment
-NUMBER_OF_PROCESSORS = 8
+NUMBER_OF_PROCESSORS = 6
 # environment
 PUBLIC = C:\Users\Public
 # environment
@@ -200,7 +200,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\jyang\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\2fff87ccee7225ea70e95fec307c0f8a-1.67.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\2fff87ccee7225ea70e95fec307c0f8a-1.67.2-main-sock
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -210,16 +210,17 @@ SUFFIXES :=
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-VSCODE_CLI =  
-1
+VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
-PROCESSOR_REVISION = 8c01
+PROCESSOR_REVISION = 9e0a
 # environment
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+CHOCOLATEYTOOLSLOCATION = C:\tools
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
 # variable set hash-table stats:
 # Load=104/1024=10%, Rehash=0, Collisions=11/131=8%
 
@@ -229,9 +230,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Workspace/github_classroom/cprog-week15-sol, mtime 1652577868): 10 files, no impossibilities.
+# . (key d:/Workspace/github_classroom/cprog-week16, mtime 1652963835): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -258,7 +259,8 @@ hw01:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 09:21:33
+#  Last modified 2022-05-19 15:16:4 
+1
 #  File has been updated.
 #  Successfully updated.
 
@@ -329,7 +331,8 @@ lab02:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 12):
+#  r 
+ecipe to execute (from 'Makefile', line 12):
 	$(compile) -o ./$(dir_hw)/$@/main ./$(dir_hw)/$@/main.cpp
 	python ./$(dir_check)/chk_$@.py
 
@@ -341,12 +344,12 @@ lab02:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 142 B / avg = 6 B
-# current buf: size = 8174 B / used = 142 B / count = 22 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 169 B / avg = 7 B
+# current buf: size = 8174 B / used = 169 B / count = 24 / avg = 7 B
 
-# strcache performance: lookups = 37 / hit rate = 40%
+# strcache performance: lookups = 39 / hit rate = 38%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/37=0%
-# Finished Make data base on Sun May 15 15:58:02 2022
+# Load=24/8192=0%, Rehash=0, Collisions=0/39=0%
+# Finished Make data base on Thu May 19 20:38:11 2022
 
  
